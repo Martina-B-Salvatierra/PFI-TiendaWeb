@@ -1,0 +1,76 @@
+/* reset.css */
+
+/* Restablece los márgenes y rellenos predeterminados */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elimina el estilo de listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Elimina los bordes de los botones y entradas */
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Elimina los bordes de las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Resetea las fuentes a un valor base */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/* Restablece la apariencia de tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Elimina el fondo predeterminado de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Restablece el comportamiento de los campos de formulario */
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Normaliza los elementos de formulario */
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #555;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: #555;
+    border-color: #555;
+}
