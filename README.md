@@ -1,8 +1,7 @@
 # Proyecto E-commerce Dinámico
 
 ## Descripción
-Este proyecto es una página web de e-commerce dinámica e interactiva que permite visualizar productos, gestionar un carrito de compras y enviar mensajes mediante un formulario de contacto. Ha sido desarrollado como parte del Trabajo Práctico Final del curso de Programación Web Front-End.
-
+Este proyecto es una página web de e-commerce dinámica e interactiva que permite visualizar productos, gestionar un carrito de compras y enviar mensajes mediante un formulario de contacto. Ha sido desarrollado como parte del Trabajo Práctico Final del curso de Front-End JS de Talento Tech.
 ## Características
 - Diseño minimalista y responsivo.
 - Consumo de datos desde una API REST.
@@ -23,7 +22,9 @@ Este proyecto es una página web de e-commerce dinámica e interactiva que permi
 ProyectoEcommerce
 │
 ├── /css
-│   └── style.css       # Estilos principales.
+│   ├── main.css       # Estilos principales.
+│   ├── reset.css       # Estilos resetados.
+│   └── theme.css       # Variables.
 │
 ├── /js
 │   └── script.js       # Funcionalidades dinámicas.
@@ -34,5 +35,4 @@ ProyectoEcommerce
 ├── productos.html      # Página de productos.
 ├── carrito.html        # Página del carrito de compras.
 ├── contacto.html       # Página de contacto.
-├── README.md           # Descripción del proyecto.
-└── .gitignore          # Archivos a ignorar (opcional).
+└── README.md           # Descripción del proyecto.
