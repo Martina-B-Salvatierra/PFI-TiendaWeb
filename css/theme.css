@@ -1,1 +1,86 @@
 /* Varibles */
+
+:root {
+
+    /* Fuentes */
+    /*=============================*/
+
+    --font-primary: 'Poppins', sans-serif; /* Para encabezados, botones y elementos destacados */
+    --font-secondary: 'Nunito', sans-serif; /* Para el cuerpo de texto y formularios */
+
+
+    /* Colores */
+    /*=============================*/
+    
+    /* Colores neutros */
+    --color-lightest: #f4f4f4;
+    --color-lighter: #f2f1f6;
+    --color-light: #efefef;
+    --color-medium-light: #e0e0e0;
+    --color-medium-dark: #ddd;
+    --color-dark: #555;
+    --color-darker: #333;
+    --color-darkest: #1f1f1f;
+
+    /* Verde (Éxito) */
+    --color-success: #2ecc71;
+    --color-success-light: #6fcf97;
+    --color-success-dark: #219150;
+    --color-success-transparent: rgba(46, 204, 113, 0.2);
+
+    /* Amarillo (Advertencia) */
+    --color-warning: #f1c40f; 
+    --color-warning-light: #f9e084; 
+    --color-warning-dark: #f39c12; 
+    --color-warning-transparent: rgba(241, 196, 15, 0.2); 
+
+    /* Rojo (Error) */
+    --color-error: #e74c3c;
+    --color-error-light: #f1948a;
+    --color-error-dark: #c0392b;
+    --color-error-transparent: rgba(231, 76, 60, 0.2);
+
+    /* Azul (Información) */
+    --color-info: #3498db;
+    --color-info-light: #85c1e9;
+    --color-info-dark: #2a80b9;
+    --color-info-transparent: rgba(52, 152, 219, 0.2);
+
+
+    /* Sombras */
+    /*=============================*/
+
+
+    /* Imputs */
+    /*=============================*/
+
+
+    /* Botones */
+    /*=============================*/
+
+    /* Botón Relleno */
+
+    /* Botón Outline */
+
+    /* Botón  */
+
+}
+
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--color-lightest);
+}
+
+h4 {
+    font-family: var(--font-primary);
+    margin: 1rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+button {
+    font-family: var(--font-primary);
+}
