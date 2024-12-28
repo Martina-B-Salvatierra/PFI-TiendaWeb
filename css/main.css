@@ -11,6 +11,7 @@
 /* Navbar */
 /*=============================*/
 
+/* Estilos generales */
 header {
     width: 100%;
     padding: 0.5rem 1rem;
@@ -18,24 +19,18 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-lightest);
-
     position: sticky;
     top: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .site-name {
-    padding: 0.4rem 0.8rem;
+    padding: 1rem 1.5rem;
     margin: 0 1rem;
     font-size: 1.1rem;
     font-family: var(--font-primary);
 }
-
-.site-name:hover {
-    background-color: #eee;
-    border-radius: 8px;
-}
-
 
 nav {
     padding: 0.4rem;
@@ -43,20 +38,101 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+}
+
+nav ul li{
+    padding: 1rem;
 }
 
 nav ul li a {
-    padding: 0.6rem 1rem;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-family: var(--font-primary);
-
+    padding: 1rem;
 }
 
-nav ul li a:hover {
+.site-name:hover, nav ul li:hover, .nav-buttons button:hover {
     background-color: #eee;
-    border-bottom:  0.15rem solid #aaa;
+    border-radius: 8px;
+}
+
+
+
+.nav-buttons {
+    margin: 0 1rem;
+}
+
+
+.menu-toggle {
+    padding: 1rem;
+    display: none;
+}
+
+.menu-toggle i {
+    font-size: 1.5rem;
+}
+
+
+.cart-button {
+    padding: 1rem;
+    
+}
+
+.cart-button i {
+    font-size: 1.5rem;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 32px;
+    background-color: #333;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 800px) {
+    .site-name {
+        margin: 0;
+    }
+
+    nav ul {
+        display: none; /* Oculta los enlaces del menú */
+        flex-direction: column;
+        background-color: var(--color-lightest);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        gap: 0;
+    }
+
+    nav ul.active {
+        display: flex; /* Muestra el menú al activarlo */
+    }
+
+    .menu-toggle {
+        display: inline-block; /* Muestra el botón hamburguesa */
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .nav-buttons {
+        margin: 0;
+    }
+
+    .cart-button {
+        margin-left: auto;
+    }
+
+    .badge {
+        top: 20px;
+        right: 76px;
+    }
 }
 
 
@@ -81,40 +157,6 @@ nav ul li a:hover {
 .hero-main p {
     margin: 0;
 }
-
-
-.cart-button {
-    padding: 1rem;
-    margin: 0 1rem;
-}
-
-.cart-button:hover {
-    background-color: #eee;
-    border-radius: 8px;
-    
-}
-
-
-.cart-button i {
-    font-size: 1.5rem;
-}
-
-
-.badge {
-    position: absolute;
-    top: 20px;
-    right: 28px;
-    background-color: #333;
-    color: white;
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: px;
-
-}
-
-
-
-
 
 /* Footer */
 /*=============================*/
