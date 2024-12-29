@@ -183,6 +183,10 @@ footer {
     width: 40%;
 }
 
+.newsletter-content h4, .newsletter-content p {
+    margin: 1rem;
+}
+
 .newsletter-form {
     padding: 2rem 1.5rem;
     display: flex;
@@ -344,5 +348,133 @@ footer {
     .footer-social {
         order: 2;        
         margin: 1rem 0;
+    }
+}
+
+
+
+
+
+
+.contact-section {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-header {
+    background-color: #eee;
+    padding: 1rem;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.intro {
+    font-size: 0.75rem;   
+    padding: 0 1rem;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem 1rem;
+    border-left: 1px solid #333;
+}
+
+.contact-header h1 {
+    padding: 0 1rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin: 4rem 0 0;
+
+
+}
+
+.description {
+    padding: 0 1rem;
+    
+
+}
+
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 60%;
+}
+
+
+form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.form-row .form-group {
+    margin: 1rem 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    font-size: 1rem;
+    padding: 0.6rem 0.2rem;
+    border-bottom: 0.15rem solid #aaa;
+    width: 100%;
+    height: 3rem;
+}
+
+.form-group textarea {
+    resize: vertical; 
+    overflow: hidden;
+    
+}
+
+.form-group label {
+    font-size: 0.75rem;
+}
+
+.submit-button {
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+@media (max-width: 800px) { 
+    .contact-section {
+        padding: 0 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-header {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .contact-form {
+        width: 100%;
     }
 }

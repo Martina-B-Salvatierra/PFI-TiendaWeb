@@ -72,13 +72,21 @@ body {
     background-color: var(--color-lightest);
 }
 
+
+h1 {
+    font-family: var(--font-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 h4 {
     font-family: var(--font-primary);
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 p {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 button {
