@@ -477,4 +477,10 @@ form {
     .contact-form {
         width: 100%;
     }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
