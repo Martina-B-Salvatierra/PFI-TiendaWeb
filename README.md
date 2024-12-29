@@ -14,7 +14,6 @@ Este proyecto es una página web de e-commerce dinámica e interactiva que permi
 - **HTML5:** Estructura semántica de las páginas.
 - **CSS3:** Estilos avanzados, diseño responsivo y uso de variables para consistencia.
 - **JavaScript:** Manipulación del DOM, interacción con APIs y eventos.
-- **Bootstrap:** Navbar responsivo.
 - **Formspree:** Envío de mensajes desde el formulario de contacto.
 
 ## Estructura del proyecto
