@@ -23,54 +23,120 @@
         <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="producto.html">Productos</a></li>
+                <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <div class="nav-buttons">
+            <!-- Carrito -->
             <button class="cart-button">
                 <i class="las la-shopping-bag"></i>
                 <span id="cartCount" class="badge">0</span>
             </button>
+
+            <!-- Menu hamburguesa -->
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <i class="las la-bars"></i>
             </button>
         </div>
         
     </header>
-    
-    
 
     <main>
 
         <!-- Hero (main) -->
         <section class="hero-main">
             <div class="hero-content">
-                <h1>Hero</h1>
-                <p>Paragraph hero</p>
-                <a href="">Comprar ahora<i class="las la-long-arrow-alt-right"></i></a>
+                <h1>Descubre lo Mejor para Ti</h1>
+                <p>Encuentra productos únicos y ofertas especiales en nuestra tienda.</p>
+                <a href="productos.html" class="hero-button">Explorar Productos<i class="las la-long-arrow-alt-right"></i></a>
             </div>
         </section>
 
-        <!-- Products -->
-        <section></section>
+        <!-- Categorias -->
+        <section class="categories-section">
+            <div class="categories-container">
+                <div class="category">
+                    <div class="category-content">
+                        <h3>Hombres</h3>
+                        <p>Descubre nuestra colección para ellos.</p>
+                        <a href="productos.html" class="btn-secondary">Explorar<i class="las la-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+    
+                <div class="category">
+                    <div class="category-content">
+                        <h3>Mujeres</h3>
+                        <p>Encuentra lo último en moda para ellas.</p>
+                        <a href="productos.html" class="btn-secondary">Explorar<i class="las la-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Line/Product -->
-        <section></section>
+            <div class="category">
+                <div class="category-content">
+                    <h3>Tendencias</h3>
+                    <p>Inspírate con lo que está en tendencia esta temporada.</p>
+                    <a href="productos.html" class="btn-secondary">Ver Tendencias<i class="las la-long-arrow-alt-right"></i></a>
+                </div>
+            </div>            
+        </section>
+        
 
-        <!-- Line -->
-        <section></section>
-
-        <!-- Products (2) -->
+        <!-- Parallax -->
         <section></section>
 
         <!-- Reviews -->
-        <section></section>
+        <section id="reviews">
+            <h2>Reseñas de Clientes</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="Usuario 1" class="user-image">
+                    <div class="review-content">
+                        <h3>Juan Pérez</h3>
+                        <p class="review-text">
+                            La calidad de la ropa es excelente, y la entrega fue muy rápida. ¡Sin duda compraré de nuevo!
+                        </p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="Usuario 2" class="user-image">
+                    <div class="review-content">
+                        <h3>María López</h3>
+                        <p class="review-text">
+                            Me encantaron los diseños únicos. Solo desearía más variedad en los tamaños.
+                        </p>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="Usuario 3" class="user-image">
+                    <div class="review-content">
+                        <h3>Carlos García</h3>
+                        <p class="review-text">
+                            Muy satisfecho con la atención al cliente. La ropa es cómoda y de alta calidad.
+                        </p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <div class="review">
+                    <img src="https://via.placeholder.com/80" alt="Usuario 4" class="user-image">
+                    <div class="review-content">
+                        <h3>Lucía Fernández</h3>
+                        <p class="review-text">
+                            Todo perfecto. Sin embargo, creo que el precio es un poco elevado en algunos productos.
+                        </p>
+                        <div class="rating">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
     <footer>
-
         <!-- Newsletter -->
         <div class="footer-newsletter">
             <div class="newsletter-content">
@@ -78,13 +144,14 @@
                 <p>Recibe actualizaciones y ofertas especiales directamente en tu correo.</p>
             </div>
 
-            <div class="newsletter-form">
+            <form class="newsletter-form" action="https://formspree.io/f/xyzzpjlb" method="post">
                 <div class="input-container">
                     <label for="newsletter-email" class="visually-hidden">Correo electrónico</label>
                     <input type="email" id="newsletter-email" placeholder="Ingresa tu correo" required>
+                    <span class="error-message" aria-live="polite"></span>
                 </div>
                 <button type="submit" class="newsletter-button">Suscribirme</button>
-            </div>
+            </form>
         </div>
 
         <!-- Copyright, pages and social -->
@@ -96,7 +163,7 @@
             <div class="footer-navigation">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="producto.html">Productos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>

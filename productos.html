@@ -23,15 +23,18 @@
         <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="producto.html">Productos</a></li>
+                <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <div class="nav-buttons">
+            <!-- Carrito -->
             <button class="cart-button">
                 <i class="las la-shopping-bag"></i>
                 <span id="cartCount" class="badge">0</span>
             </button>
+
+            <!-- Menu hamburguesa -->
             <button class="menu-toggle" aria-label="Toggle navigation">
                 <i class="las la-bars"></i>
             </button>
@@ -39,10 +42,32 @@
         
     </header>
 
-    <main></main>
+    <main>
+        <section class="hero-main">
+            <div class="hero-content">
+                <h1>Hero products</h1>
+                <p>Paragraph hero</p> 
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h1>Catálogo de Productos</h1>
+            <div id="products" class="products-container">
+                <!-- Ejemplo de tarjeta dinámica -->
+                <div class="product-card">
+                    <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Product Title" class="product-image">
+                    <h3 class="product-title">Fjallraven - Foldsack No. 1 Backpack</h3>
+                    <p class="product-price">$109.95</p>
+                    <button class="add-to-cart" data-id="1" data-title="Fjallraven - Foldsack No. 1 Backpack" data-price="109.95" data-image="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                        Agregar al carrito
+                    </button>
+                </div>
+                <!-- Más tarjetas se agregarán aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
 
     <footer>
-
         <!-- Newsletter -->
         <div class="footer-newsletter">
             <div class="newsletter-content">
@@ -50,13 +75,14 @@
                 <p>Recibe actualizaciones y ofertas especiales directamente en tu correo.</p>
             </div>
 
-            <div class="newsletter-form">
+            <form class="newsletter-form" action="https://formspree.io/f/xyzzpjlb" method="post">
                 <div class="input-container">
                     <label for="newsletter-email" class="visually-hidden">Correo electrónico</label>
                     <input type="email" id="newsletter-email" placeholder="Ingresa tu correo" required>
+                    <span class="error-message" aria-live="polite"></span>
                 </div>
                 <button type="submit" class="newsletter-button">Suscribirme</button>
-            </div>
+            </form>
         </div>
 
         <!-- Copyright, pages and social -->
@@ -68,7 +94,7 @@
             <div class="footer-navigation">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="producto.html">Productos</a></li>
+                    <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
