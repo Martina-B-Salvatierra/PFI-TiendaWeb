@@ -46,24 +46,6 @@
     --color-info-dark: #2a80b9;
     --color-info-transparent: rgba(52, 152, 219, 0.2);
 
-
-    /* Sombras */
-    /*=============================*/
-
-
-    /* Imputs */
-    /*=============================*/
-
-
-    /* Botones */
-    /*=============================*/
-
-    /* Botón Relleno */
-
-    /* Botón Outline */
-
-    /* Botón  */
-
 }
 
 
@@ -75,6 +57,7 @@ body {
 
 h1 {
     font-family: var(--font-primary);
+    color: var(--color-lighter);
     margin-bottom: 1rem;
     font-weight: 600;
     font-size: 2rem;
@@ -82,21 +65,151 @@ h1 {
 
 h2 {
     font-family: var(--font-primary);
+    color: var(--color-lighter);
     margin: 1.2rem 0 4rem;
     font-size: 1.6rem;
     font-weight: 500;
     color: #333;
 }
 
+h3 {
+    font-family: var(--font-primary);
+    color: var(--color-lighter);
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
 h4 {
     font-family: var(--font-primary);
     margin: 1rem 0;
 }
 
+
+.parallax-content h2 {
+    margin-bottom: 1rem;
+    color: var(--color-lighter);
+}
+
+.hero-main .hero-content p, .parallax-content p {
+    color: var(--color-lighter);
+    margin: 0;
+}
+
+.product-title {
+    color: var(--color-darker);
+}
+
+.parallax-content h3 {
+    margin: 0;
+}
+
+
 p {
     margin: 1rem 0;
 }
 
+
+
+
 button {
     font-family: var(--font-primary);
+}
+
+
+
+.btn-primary {
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    color: var(--color-lighter);
+    font-family: var(--font-primary);
+    background-color: var(--color-darkest);
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.btn-primary:hover {
+    color: var(--color-lighter);
+    background-color: var(--color-darker);
+}
+
+
+
+.btn-secondary {
+    padding: 0.9rem 1.5rem;
+    margin: 1rem;
+    color: var(--color-dark);
+    font-family: var(--font-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-dark);
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.btn-secondary:hover {
+    color: var(--color-lighter);
+    background-color: var(--color-dark);
+}
+
+.btn-secondary i {
+    transition: transform 0.6s ease;
+    padding: 0  0.1rem 0 0.4rem; 
+}
+
+.btn-secondary:hover i {
+    transform: translateX(8px);
+}
+
+
+
+.btn-tertiary {
+    padding-bottom: 0.1rem;
+    margin: 2rem 0 1rem;
+    color: var(--color-light);
+    font-family: var(--font-primary);
+    background-color: transparent;
+    border: 0.15rem solid transparent;
+    border-bottom: 0.15rem solid var(--color-light);
+    cursor: pointer;
+    transition: border-bottom 0.5s ease; 
+}
+
+.btn-tertiary i {
+    padding: 0 0.4rem;
+    transition: transform 0.3s ease; 
+}
+
+.btn-tertiary:hover i {
+    transform: translateX(5px);
+}
+
+
+.add-to-cart {
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    color: var(--color-dark);
+    font-family: var(--font-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-dark);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+.add-to-cart:hover {
+    color: var(--color-lighter);
+    background-color: var(--color-dark);
+}
+
+.parallax-content .btn-secondary {
+    color: var(--color-lighter);
+    border: 1px solid var(--color-lightest);
+    margin: 3rem 1rem 0.5rem;
+}
+
+.parallax-content .btn-secondary:hover {
+    color: var(--color-darker);
+    background-color: var(--color-lighter);
 }
